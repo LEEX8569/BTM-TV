@@ -1,0 +1,26 @@
+{
+    "name": "BTM TV",
+    "description": "BIENVENUE SUR BTM TV LA TV DE VOS GRANDS DARONS",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+      },
+      "action": {
+        "default_popup": "popup.html"
+      },
+      
+      "icons": {
+        "16": "images/BTM-16.png",
+        "32": "images/BTM-32.png",
+        "48": "images/BTM-48.png",
+        "128": "images/BTM-128.png"
+      },
+      "permissions": [
+        "alarms",
+        "notifications"
+    ],
+    "host_permissions": [
+        "https://*.github.io/"
+    ]
+  }

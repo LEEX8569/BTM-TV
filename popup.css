@@ -1,0 +1,125 @@
+body {
+    background-color: #253254; /* Bleu clair, vous pouvez ajuster la couleur selon vos préférences */
+    width: 480px; /* Ajustez la largeur selon vos besoins */
+    height: 100px;
+    margin-top: 50px 
+}
+
+#copypastaText {
+margin-top: 20px;
+white-space: pre-wrap; /* S'assure que le formatage de la copypasta est préservé */
+color:#f1f1f1;
+font-size: 24px;
+}
+.tab {
+    position: absolute; /* Positionne absolument par rapport à son conteneur relatif le plus proche */
+    top: 0; /* Place en haut */
+    left: 0;
+    width: 100%; /* Largeur totale */
+    overflow: hidden;
+    border: 2px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style pour les boutons d'onglets */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color des onglets au survol */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Style pour le contenu de l'onglet actif */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style pour cacher le contenu de l'onglet par défaut */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tablinks {
+    background-color: #f1f1f1; /* Couleur de fond par défaut */
+    color: #253254; /* Couleur du texte par défaut */
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tablinks[data-tab="copypastaTab"] {
+    background-color: #253254; /* Couleur de fond personnalisée */
+    color: #f1f1f1; /* Couleur du texte personnalisée */
+}
+
+.tablinks[data-tab="copypastaTab"].active {
+    background-color: #253254; /* Couleur de fond plus foncée */
+}
+
+#btmTvTab {
+    background-color: #253254; /* Couleur de fond de votre choix */
+    color: #f1f1f1; /* Couleur du texte */
+}
+
+#btmTvContent {
+    font-size: 20px; /* Modifiez cette valeur pour ajuster la taille du texte */
+}
+
+.tabcontent {
+    border: none;
+}
+
+.tabcontent {
+    margin: 0;
+    padding: 0;
+}
+
+.tabcontent {
+    background: none;
+}
+
+#generateButton {
+    margin-top: 15px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.tablinks[data-tab="btmTvTab"] {
+    background-color: #253254; /* Remplacez cette valeur par la couleur désirée */
+    color: #f1f1f1; /* Couleur du texte, changez si nécessaire */
+}
+
+.tab .tablinks.active {
+    background-color: #f1f1f1; /* Fond blanc pour l'onglet actif */
+    color: black; /* Texte noir pour l'onglet actif */
+}
+
+#btmTvContent {
+    margin-bottom: 20px;
+}
+
+#btmTvNews {
+    font-size: 20px; /* Ajustez cette valeur selon vos préférences */
+    /* Vous pouvez ajouter d'autres styles ici si nécessaire */
+}
+
+#wiprImage {
+    width: 25%; /* ou une largeur fixe, selon vos besoins */
+    height: auto; /* pour conserver les proportions de l'image */
+    display: block; /* pour éviter les espaces sous l'image */
+    margin: 10px 0; /* ajustez selon vos besoins */
+}
+

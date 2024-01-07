@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BTM TV</title>
+</head>
+
+<body>
+    <div class="tab">
+        <button class="tablinks" data-tab="copypastaTab">Copy Pasta</button>
+        <button class="tablinks" data-tab="btmTvTab">BTM TV</button>
+    </div>
+
+    <div id="copypastaTab" class="tabcontent">
+        <div id="container">
+            <button id="generateButton">Générer une Copypasta</button>
+            <p id="copypastaText"></p>
+        </div>
+    </div>
+
+    <div id="btmTvTab" class="tabcontent" style="display:none;">
+        <p id="btmTvContent"></p>
+        <p id="btmTvNews"></p> <!-- Nouvelle section pour l'actualité -->
+        <img id="wiprImage" src="images/WICHOKBAR.png" alt="Description de l'image">
+    </div>
+    <a href="https://discord.com/channels/371695335980138497/1192119024453177384" target="_blank">
+        <img id="btmImage" src="images/btm-128.png" alt="BTM">
+    </a>
+
+    <p id="info"></p>
+    <script src="popup.js"></script>
+</body>
+
+</html>
